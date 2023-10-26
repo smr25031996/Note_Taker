@@ -1,0 +1,136 @@
+/* Reset some default styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Header styling */
+header {
+  background-color: #fbbc05;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+#page-title {
+  font-size: 1.8rem;
+  color: #333333;
+  text-align: center;
+}
+
+/* Form container styling */
+.container {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+/* Form field styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+/* Input field styling */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-control:focus {
+  border-color: #fbbc05;
+}
+
+/* Error message styling */
+.text-danger {
+  color: #ff0000;
+  display: none;
+  font-size: 0.9rem;
+}
+
+/* Submit button styling */
+#add-post {
+  background-color: #5cadff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#add-post:hover {
+  background-color: #368dff;
+}
+
+/* Note card styling */
+.note-card {
+  background-color: #f5f5f5; /* Subtle gray background */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Note title styling */
+.note-card h5 {
+  background-color: #fbbc05; /* Highlight the title with a gentle yellow */
+  color: #333333;
+  padding: 10px; /* Increased padding for elegance */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin: -10px -10px 10px -10px; /* Slight spacing between title and content */
+}
+
+/* Note description styling */
+.note-card p {
+  color: #555; /* A more subtle text color */
+  padding: 10px; /* Increased padding for elegance */
+}
+
+/* Style the "Remove" button */
+.note-card .btn-secondary {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.note-card .btn-secondary:hover {
+  background-color: #cc0000;
+}
+
+/* Clear floats in the grid layout for small screens */
+@media (max-width: 576px) {
+  .col-md-4 {
+    clear: both;
+  }
+}
+/* Note card hover effect */
+.note-card:hover {
+  background-color: #eaeaea; /* Change background color on hover */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+}
+
+/* Reset the button's background on hover */
+.note-card:hover .btn-secondary {
+  background-color: #ff0000;
+}
